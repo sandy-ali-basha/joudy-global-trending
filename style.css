@@ -22,13 +22,14 @@ CSS STRUCTURE:
 /*--------------------------------------------------------------
 /** 1. VARIABLES
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 :root {
   --accent-color: #0d0d0d;
   --bs-gray-100: #f3f3f3;
   --bs-gray-200: #e7e5e2;
   --bs-primary: #c70e0e;
   --bs-secondary: #F6F5F2;
-  --bs-primary-rgb: 112, 66, 4;
+  --bs-primary-rgb: 199, 14, 14;
   --bs-body-bg-rgb: 253, 254, 255;
   --bs-light: #fff;
   --bs-dark: #000;
@@ -49,8 +50,8 @@ CSS STRUCTURE:
 
 /* Fonts */
 :root {
-  --body-font: "Sofia Sans", sans-serif;
-  --heading-font: "Cormorant Upright", serif;
+  --body-font: "Cairo","Sofia Sans", sans-serif;
+  --heading-font: "Cairo","Cormorant Upright", serif;
 }
 
 /*----------------------------------------------*/
