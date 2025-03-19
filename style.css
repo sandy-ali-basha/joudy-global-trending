@@ -630,13 +630,13 @@ h5 {
 }
 
 .btn.btn-arrow:hover span {
-  transform: translate3d(-7px, 0, 0);
+  transform: translate3d(7px, 0, 0);
 }
 
 .btn.btn-arrow svg {
   position: absolute;
   top: 32px;
-  right: 30px;
+  left: 30px;
   transform: translateY(-50%);
   transition: all 300ms ease-out;
   will-change: right, opacity;
@@ -644,7 +644,7 @@ h5 {
 
 .btn.btn-arrow:hover svg {
   opacity: 0;
-  right: 0;
+  left: 0;
 }
 
 .btn svg.icon-arrow {
