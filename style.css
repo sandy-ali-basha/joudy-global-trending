@@ -802,7 +802,7 @@ h5 {
     height: 100%;
   }
 
-  .banner-content h1.display-1 {
+  .banner-content h1 {
     font-size: 4.5em;
   }
 
@@ -818,7 +818,7 @@ h5 {
 }
 
 @media only screen and (max-width: 768px) {
-  .banner-content h1.display-1 {
+  .banner-content h1 {
     font-size: 3.5em;
   }
 }
