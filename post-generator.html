@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>منشئ المقالات</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <h2>إنشاء مقالة جديدة</h2>
+      <form class="w-100 form-group" id="postForm" style="width: 100%;">
+        <label>عنوان المقالة:</label><br />
+        <input
+          class="form-control"
+          class="w-100"
+          type="text"
+          id="postTitle"
+        /><br /><br />
+
+        <label>المحتوى:</label><br />
+        <textarea class="form-control" id="postContent" rows="5"></textarea
+        ><br /><br />
+
+        <label>رابط صورة المقالة:</label><br />
+        <input class="form-control" type="text" id="postImage" /><br /><br />
+
+        <label>وصف الميتا:</label><br />
+        <textarea class="form-control" id="metaDescription"></textarea
+        ><br /><br />
+
+        <label>الكلمات المفتاحية:</label><br />
+        <input class="form-control" type="text" id="metaKeywords" /><br /><br />
+
+        <h3>مقالات ذات صلة:</h3>
+        <div id="relatedArticlesContainer">
+          <div class="related-article">
+            <label>عنوان:</label
+            ><input
+              class="form-control"
+              type="text"
+              class="related-title"
+            /><br />
+            <label>رابط الصورة:</label
+            ><input
+              class="form-control"
+              type="text"
+              class="related-image"
+            /><br />
+            <label>الشرح:</label
+            ><input
+              class="form-control"
+              type="text"
+              class="related-desc"
+            /><br />
+            <label>الرابط:</label
+            ><input
+              class="form-control"
+              type="text"
+              class="related-link"
+            /><br /><br />
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-gray" onclick="addRelatedArticle()">
+          + إضافة مقال ذات صلة</button
+        ><br /><br />
+        <button class="btn btn-outline-danger"  type="button" onclick="generatePost()">توليد الملف</button>
+      </form>
+    </div>
+
+    <script src="post-generator.js"></script>
+  </body>
+</html>
