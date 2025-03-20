@@ -1,7 +1,11 @@
 window.generatePost = function () {
     const title = document.getElementById('postTitle').value;
     const content = document.getElementById('postContent').value;
+    const content2 = document.getElementById('postContent2').value;
+    const content3 = document.getElementById('postContent3').value;
     const image = document.getElementById('postImage').value;
+    const image2 = document.getElementById('postImage2').value;
+    const image3 = document.getElementById('postImage3').value;
     const metaDesc = document.getElementById('metaDescription').value;
     const metaKeywords = document.getElementById('metaKeywords').value;
   
@@ -58,7 +62,14 @@ window.generatePost = function () {
                 </div>
               </div>
             </article>
-            <div class="post-description padding-medium">${content}</div>
+            <div class="post-description padding-medium">
+            
+            ${content}
+            <img src="images/${image2}.jpg" alt="post-image" class="img-fluid" />
+            ${content2}
+            <img src="images/${image3}.jpg" alt="post-image" class="img-fluid" />
+            ${content3}
+            </div>
           </main>
         </div>
       </div>

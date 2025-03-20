@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>منشئ المقالات</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -18,12 +19,26 @@
           id="postTitle"
         /><br /><br />
 
+        <label>رابط صورة المقالة:</label><br />
+        <input class="form-control" type="text" id="postImage" /><br /><br />
+
         <label>المحتوى:</label><br />
         <textarea class="form-control" id="postContent" rows="5"></textarea
         ><br /><br />
 
-        <label>رابط صورة المقالة:</label><br />
-        <input class="form-control" type="text" id="postImage" /><br /><br />
+        <label>رابط صورة 2:</label><br />
+        <input class="form-control" type="text" id="postImage2" /><br /><br />
+
+        <label>المحتوى:</label><br />
+        <textarea class="form-control" id="postContent2" rows="5"></textarea
+        ><br /><br />
+
+        <label>المحتوى:</label><br />
+        <textarea class="form-control" id="postContent3" rows="5"></textarea
+        ><br /><br />
+
+        <label>رابط صورة 3:</label><br />
+        <input class="form-control" type="text" id="postImage3" /><br /><br />
 
         <label>وصف الميتا:</label><br />
         <textarea class="form-control" id="metaDescription"></textarea
@@ -36,32 +51,29 @@
         <div id="relatedArticlesContainer">
           <div class="related-article">
             <label>عنوان:</label
-            ><input
-              class="form-control related-title"
-              type="text"
-            /><br />
+            ><input class="form-control related-title" type="text" /><br />
             <label>رابط الصورة:</label
-            ><input
-              class="form-control related-image"
-              type="text"
-            /><br />
+            ><input class="form-control related-image" type="text" /><br />
             <label>الشرح:</label
-            ><input
-              class="form-control related-desc"
-              type="text"
-
-            /><br />
+            ><input class="form-control related-desc" type="text" /><br />
             <label>الرابط:</label
-            ><input
-              class="form-control related-link"
-              type="text"
-            /><br /><br />
+            ><input class="form-control related-link" type="text" /><br /><br />
           </div>
         </div>
-        <button type="button" class="btn btn-outline-gray" onclick="addRelatedArticle()">
+        <button
+          type="button"
+          class="btn btn-outline-gray"
+          onclick="addRelatedArticle()"
+        >
           + إضافة مقال ذات صلة</button
         ><br /><br />
-        <button class="btn btn-outline-danger"  type="button" onclick="generatePost()">توليد الملف</button>
+        <button
+          class="btn btn-outline-danger"
+          type="button"
+          onclick="generatePost()"
+        >
+          توليد الملف
+        </button>
       </form>
     </div>
 
