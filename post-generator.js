@@ -65,9 +65,9 @@ window.generatePost = function () {
             <div class="post-description padding-medium">
             
             ${content}
-            <img src="images/${image2}.jpg" alt="post-image" class="img-fluid" />
+            <img src="images/${image2}.jpg" alt="post-image" class="img-fluid my-4" />
             ${content2}
-            <img src="images/${image3}.jpg" alt="post-image" class="img-fluid" />
+            <img src="images/${image3}.jpg" alt="post-image" class="img-fluid my-4" />
             ${content3}
             </div>
           </main>
