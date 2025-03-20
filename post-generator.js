@@ -54,7 +54,7 @@ window.generatePost = function () {
                 </div>
                 <h1 style="text-align: right;">${title}</h1>
                 <div class="hero-image col-lg-12 mt-5">
-                  <img src="${image}" alt="post-image" class="img-fluid w-100" />
+                  <img src="images/${image}.jpg" alt="post-image" class="img-fluid w-100" />
                 </div>
               </div>
             </article>
