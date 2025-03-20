@@ -18,7 +18,7 @@ window.generatePost = function () {
         <div class="card-item">
           <div class="card border-0">
             <div class="card-image">
-              <img src="${rImage}" alt="image" class="post-image img-fluid" />
+              <img src="images/${rImage}.jpg" alt="image" class="post-image img-fluid" />
             </div>
           </div>
           <div class="card-body p-0 mt-4">
