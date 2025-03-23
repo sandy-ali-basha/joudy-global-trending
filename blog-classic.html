@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
   <head>
     <title>Jewels - Jewelry and Accessories Store Website Template</title>
     <meta charset="utf-8" />
@@ -27,6 +27,7 @@
     <script src="js/modernizr.js"></script>
   </head>
   <body
+    dir="rtl"
     class="bg-body"
     data-bs-spy="scroll"
     data-bs-target="#navbar"
@@ -103,100 +104,40 @@
     <div id="preloader">
       <span class="loader"></span>
     </div>
-
-    <div class="search-box position-relative overflow-hidden w-100">
-      <div class="search-wrap">
-        <div class="close-button position-absolute">
-          <svg class="close" width="22" height="22">
-            <use xlink:href="#close"></use>
-          </svg>
-        </div>
-        <form id="search-form" class="text-center pt-3" action="" method="">
-          <input
-            type="text"
-            class="search-input fs-5 p-4 bg-transparent"
-            placeholder="Search..."
-          />
-          <svg class="search" width="22" height="22">
-            <use xlink:href="#search"></use>
-          </svg>
-        </form>
-      </div>
-    </div>
-
     <header id="header" class="site-header text-black">
-      <nav id="header-nav" class="navbar navbar-expand-lg px-3">
+      <nav id="header-nav" class="navbar navbar-expand px-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img
-              src="images/main-logo.png"
-              class="logo"
-              style="width: 100px;"
-            />
+            <img src="images/main-logo.png" class="logo" style="width: 100px;" alt="global trending" />
           </a>
-          <button
-            class="navbar-toggler d-flex d-lg-none order-3 p-2"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#bdNavbar"
-            aria-controls="bdNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <svg class="navbar-icon" width="50" height="50">
-              <use xlink:href="#navbar-icon"></use>
-            </svg>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="bdNavbar"
-            aria-labelledby="bdNavbarOffcanvasLabel"
-          >
-            <div class="offcanvas-header px-4 pb-0">
-              <a class="navbar-brand" href="index.html">
-                <img
-                  src="images/main-logo.png"
-                  class="logo"
-                  style="width: 100px;"
-                />
-              </a>
-              <button
-                type="button"
-                class="btn-close btn-close-black"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                data-bs-target="#bdNavbar"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul
-                id="navbar"
-                class="navbar-nav text-capitalize justify-content-end align-items-center flex-grow-1 pe-3"
-              >
+    
+          <!-- REMOVE offcanvas logic and just show menu always -->
+          <div class="navbar-collapse d-flex justify-content-end flex-grow-1">
+            <ul class="navbar-nav text-capitalize align-items-center pe-md-3 pe-1">
               <li class="nav-item">
-                <a class="nav-link me-4 active" href="index.html">الرئيسية</a>
+                <a class="nav-link me-md-4 me-2 active" href="index.html">الرئيسية</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-4 active" href="./blog-classic.html">المدونة</a>
+                <a class="nav-link me-md-4 me-2 active" href="./blog-classic.html">المدونة</a>
               </li>
-              </ul>
-            </div>
+              <li class="nav-item">
+                <a class="nav-link me-md-4 me-2 active" href="./sections.html">الاقسام</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <section class="hero-section d-flex align-items-center margin-large">
       <div class="container-fluid">
         <div class="row">
           <div class="hero-content align-items-center">
-            <h1 class="display-1">Blog</h1>
+            <h1 class="display-1">المدونة</h1>
             <div class="breadcrumbs">
               <span class="item">
-                <a href="index.html">Home /</a>
+                <a href="index.html">الرئيسية /</a>
               </span>
-              <span class="item">Blog</span>
+              <span class="item">المدونة</span>
             </div>
           </div>
         </div>
@@ -211,258 +152,100 @@
               <div class="col-lg-4 col-md-6">
                 <article class="post-item pb-5 image-zoom-effect">
                   <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
+                    <a href="./post-1.html"
                       ><img
-                        src="images/post-item1.jpg"
+                        src="./images/Blog (1)/فدية-الصيام.jpg"
                         class="img-fluid"
                         alt="fashion"
                     /></a>
                   </div>
                   <div class="post-content">
                     <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Jewellery</span> /
-                      <span class="meta-date">12 jan, 2024</span>
+                      <span class="post-category">تريند العالم</span> /
+                      <span class="meta-date">20 March, 2025</span>
                     </div>
+
                     <h5 class="post-title text-capitalize">
-                      <a href="single-post.html"
-                        >Accessorizing for Every Occasion: Jewelry Styling
-                        Tips</a
-                      >
+                      <a href="./post-1.html">
+                        &nbsp;قيمة فدية الصيام لمن لا يستطيع الصيام 2025 فدية
+                        العاجز عن الصيام
+                      </a>
                     </h5>
                     <p>
-                      Dignissim lacus, turpis ut suspendisse vel tellus. Turpis
-                      purus, gravida orci, fringilla...
+                      وعلى من لا تجز، حيث أوضحت دار الإفتاء المصرية الحالات التي
+                      لا يجوز إخراج الفدية عن الصيام فيها ويلزم في هذه الحالات
+                      القضاء. وجاء هذا التوضيح عبر منشور نشرته دار لإفتاء
+                      المصرية عبر صفحتها الرسمية على فيسبوك.&nbsp;
                     </p>
                   </div>
                 </article>
               </div>
-
               <div class="col-lg-4 col-md-6">
                 <article class="post-item pb-5 image-zoom-effect">
                   <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
+                    <a href="./post-1.html"
                       ><img
-                        src="images/post-item2.jpg"
+                        src="./images/مقدار زكاة الفطر لرمضان.jpg"
                         class="img-fluid"
                         alt="fashion"
                     /></a>
                   </div>
                   <div class="post-content">
                     <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Bed Rooms</span> /
-                      <span class="meta-date">18 jan, 2024</span>
+                      <span class="post-category">تريند العالم</span> /
+                      <span class="meta-date">20 March, 2025</span>
                     </div>
+
                     <h5 class="post-title text-capitalize">
-                      <a href="single-post.html"
-                        >10 Timeless Jewelry Pieces Every Woman Should Own</a
+                      <a
+                        href="./مقدار_زكاة_الفطر_لرمضان_2025_كم_تبلغ_زكاة_الفطر_لهذا_العام؟.html"
+                        >مقدار زكاة الفطر لرمضان 2025 كم تبلغ زكاة الفطر لهذا
+                        العام؟</a
                       >
                     </h5>
                     <p>
-                      vel pretium suspendisse ultrices tempus vestibulum, nisl
-                      platea adipiscing ac ullamcorper...
+                      قيمتها وآخر موعد لإخراجها بحسب دار الإفتاء. فمع بداية شهر
+                      رمضان المبارك تحركت الجهات المعنية لتحديد قيمة زكاة الفطر
+                      للفرد الواحد في دول العالم. ومع اقتراب النصف الثاني من
+                      الشهر الفضيل كثرت عمليات..
                     </p>
                   </div>
                 </article>
               </div>
-
               <div class="col-lg-4 col-md-6">
                 <article class="post-item pb-5 image-zoom-effect">
                   <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
+                    <a href="./post-1.html"
                       ><img
-                        src="images/post-item9.jpg"
+                        src="images/موعد-إجازة-عيد-الفطر-المبارك-2025.jpg"
                         class="img-fluid"
                         alt="fashion"
                     /></a>
                   </div>
                   <div class="post-content">
                     <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Kitchen</span> /
-                      <span class="meta-date">10 Feb, 2024</span>
+                      <span class="post-category">تريند العالم</span> /
+                      <span class="meta-date">20 March, 2025</span>
                     </div>
+
                     <h5 class="post-title text-capitalize">
-                      <a href="single-post.html"
-                        >How to Choose the Perfect Engagement Ring</a
+                      <a
+                        href="
+                      موعد_إجازة_عيد_الفطر_المبارك_2025_متى_عيد_الفطر_1.html
+                      "
                       >
+                        موعد إجازة عيد الفطر المبارك 2025 متى عيد الفطر
+                      </a>
                     </h5>
                     <p>
-                      Consequat suspendisse ultrices tempus vestibulum, nisl
-                      platea adipiscing ac ullamcorper...
-                    </p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <article class="post-item pb-5 image-zoom-effect">
-                  <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
-                      ><img
-                        src="images/post-item4.jpg"
-                        class="img-fluid"
-                        alt="fashion"
-                    /></a>
-                  </div>
-                  <div class="post-content">
-                    <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Living Room</span> /
-                      <span class="meta-date">05 March, 2024</span>
-                    </div>
-                    <h5 class="post-title text-capitalize">
-                      <a href="single-post.html"
-                        >Accessorizing for Every Occasion: Jewelry Styling
-                        Tips</a
-                      >
-                    </h5>
-                    <p>
-                      Dignissim lacus, turpis ut suspendisse vel tellus. Turpis
-                      purus, gravida orci, fringilla...
-                    </p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <article class="post-item pb-5 image-zoom-effect">
-                  <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
-                      ><img
-                        src="images/post-item5.jpg"
-                        class="img-fluid"
-                        alt="fashion"
-                    /></a>
-                  </div>
-                  <div class="post-content">
-                    <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Dining Table</span> /
-                      <span class="meta-date">28 March, 2024</span>
-                    </div>
-                    <h5 class="post-title text-capitalize">
-                      <a href="single-post.html">Best Jewellerys for 2024</a>
-                    </h5>
-                    <p>
-                      vel pretium suspendisse ultrices tempus vestibulum, nisl
-                      platea adipiscing ac ullamcorper...
-                    </p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <article class="post-item pb-5 image-zoom-effect">
-                  <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
-                      ><img
-                        src="images/post-item6.jpg"
-                        class="img-fluid"
-                        alt="fashion"
-                    /></a>
-                  </div>
-                  <div class="post-content">
-                    <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Guest Room</span> /
-                      <span class="meta-date">04 April, 2024</span>
-                    </div>
-                    <h5 class="post-title text-capitalize">
-                      <a href="single-post.html"
-                        >10 Timeless Jewelry Pieces Every Woman Should Own</a
-                      >
-                    </h5>
-                    <p>
-                      Consequat suspendisse ultrices tempus vestibulum, nisl
-                      platea adipiscing ac ullamcorper...
-                    </p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <article class="post-item pb-5 image-zoom-effect">
-                  <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
-                      ><img
-                        src="images/post-item7.jpg"
-                        class="img-fluid"
-                        alt="fashion"
-                    /></a>
-                  </div>
-                  <div class="post-content">
-                    <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Jewellery</span> /
-                      <span class="meta-date">07 April, 2024</span>
-                    </div>
-                    <h5 class="post-title text-capitalize">
-                      <a href="single-post.html"
-                        >Accessorizing for Every Occasion: Jewelry Styling
-                        Tips</a
-                      >
-                    </h5>
-                    <p>
-                      Dignissim lacus, turpis ut suspendisse vel tellus. Turpis
-                      purus, gravida orci, fringilla...
-                    </p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <article class="post-item pb-5 image-zoom-effect">
-                  <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
-                      ><img
-                        src="images/post-item8.jpg"
-                        class="img-fluid"
-                        alt="fashion"
-                    /></a>
-                  </div>
-                  <div class="post-content">
-                    <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Bed Rooms</span> /
-                      <span class="meta-date">10 April, 2024</span>
-                    </div>
-                    <h5 class="post-title text-capitalize">
-                      <a href="single-post.html"
-                        >How to Choose the Perfect Engagement Ring</a
-                      >
-                    </h5>
-                    <p>
-                      vel pretium suspendisse ultrices tempus vestibulum, nisl
-                      platea adipiscing ac ullamcorper...
-                    </p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <article class="post-item pb-5 image-zoom-effect">
-                  <div class="post-image overflow-hidden">
-                    <a href="single-post.html"
-                      ><img
-                        src="images/post-item3.jpg"
-                        class="img-fluid"
-                        alt="fashion"
-                    /></a>
-                  </div>
-                  <div class="post-content">
-                    <div class="post-meta text-capitalize py-3">
-                      <span class="post-category">Bed Rooms</span> /
-                      <span class="meta-date">10 April, 2024</span>
-                    </div>
-                    <h5 class="post-title text-capitalize">
-                      <a href="single-post.html"
-                        >How to Choose the Perfect Engagement Ring</a
-                      >
-                    </h5>
-                    <p>
-                      vel pretium suspendisse ultrices tempus vestibulum, nisl
-                      platea adipiscing ac ullamcorper...
+                      موعد إجازة عيد الفطر المبارك 2025 متى عيد الفطر لهذا العام؟ حيث بدأ العد التنازلي لانتهاء شهر رمضان المبارك بعد دخولنا في النصف الثاني منه. وعليه، كثرت عمليات البحث وازدادت عن موعد عيد الفطر السعيد. لاسيما بعد أن أشارت الحسابات....
                     </p>
                   </div>
                 </article>
               </div>
             </div>
 
-            <nav
+            <!-- <nav
               aria-label="Page navigation"
               class="d-flex justify-content-center mt-5"
             >
@@ -489,7 +272,7 @@
                   </a>
                 </li>
               </ul>
-            </nav>
+            </nav> -->
           </main>
         </div>
       </div>

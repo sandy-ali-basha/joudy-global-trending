@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
   <head>
     <title>global trending - تريند العالم</title>
   
@@ -180,87 +180,26 @@
       <span class="loader"></span>
     </div>
 
-    <div class="search-box position-relative overflow-hidden w-100">
-      <div class="search-wrap">
-        <div class="close-button position-absolute">
-          <svg class="close" width="22" height="22">
-            <use xlink:href="#close"></use>
-          </svg>
-        </div>
-        <form id="search-form" class="text-center pt-3" action="" method="">
-          <input
-            type="text"
-            class="search-input fs-5 p-4 bg-transparent"
-            placeholder="Search..."
-          />
-          <svg class="search" width="22" height="22">
-            <use xlink:href="#search"></use>
-          </svg>
-        </form>
-      </div>
-    </div>
-
     <header id="header" class="site-header text-black">
-      <nav id="header-nav" class="navbar navbar-expand-lg px-3">
+      <nav id="header-nav" class="navbar navbar-expand px-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img
-              src="images/main-logo.png"
-              class="logo"
-              style="width: 100px;"
-              alt="global trending"
-            />
+            <img src="images/main-logo.png" class="logo" style="width: 100px;" alt="global trending" />
           </a>
-          <button
-            class="navbar-toggler d-flex d-lg-none order-3 p-2"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#bdNavbar"
-            aria-controls="bdNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <svg class="navbar-icon" width="50" height="50">
-              <use xlink:href="#navbar-icon"></use>
-            </svg>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="bdNavbar"
-            aria-labelledby="bdNavbarOffcanvasLabel"
-          >
-            <div class="offcanvas-header px-4 pb-0">
-              <a class="navbar-brand" href="index.html">
-                <img
-                  src="images/main-logo.png"
-                  class="logo"
-                  style="width: 100px;"
-                />
-              </a>
-              <button
-                type="button"
-                class="btn-close btn-close-black"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                data-bs-target="#bdNavbar"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul
-                id="navbar"
-                class="navbar-nav text-capitalize justify-content-end align-items-center flex-grow-1 pe-3"
-              >
-                <li class="nav-item">
-                  <a class="nav-link me-4 active" href="index.html">الرئيسية</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4 active" href="./blog-classic.html"
-                    >المدونة</a
-                  >
-                </li>
-              </ul>
-            </div>
+    
+          <!-- REMOVE offcanvas logic and just show menu always -->
+          <div class="navbar-collapse d-flex justify-content-end flex-grow-1">
+            <ul class="navbar-nav text-capitalize align-items-center pe-md-3 pe-1">
+              <li class="nav-item">
+                <a class="nav-link me-md-4 me-2 active" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4 me-2 active" href="./blog-classic.html">المدونة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4 me-2 active" href="./sections.html">الاقسام</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -523,7 +462,7 @@
                 المقالات الاخيرة
               </h2>
               <a
-                href="blog.html"
+                href="./blog-classic.html"
                 class="btn btn-medium btn-arrow btn-normal position-relative"
               >
               <svg
