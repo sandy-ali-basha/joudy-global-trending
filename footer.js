@@ -32,11 +32,18 @@ function injectFooter() {
             </div>
           </div>
         </div>
+        <div class="d-flex align-items-center justify-content-center ">
+        جميع الحقوق محفوظة 2025 ©  
+        <div class="mx-1">
+        تم التطوير من قبل
+        </div>
+        <a class="mx-1" href="https://xyz-dev.vercel.app/">xyz</a>
+        </div>
       </div>
     </footer>
    
   `;
-  document.body.insertAdjacentHTML('beforeend', footerHTML);
+  document.body.insertAdjacentHTML("beforeend", footerHTML);
 }
 
 // Call it when DOM is ready
