@@ -32,12 +32,12 @@ fetch(sheetCSVUrl)
         $("#title").append(post.post_title);
         $("#post_header").append(post.header);
         $("#body").append(post.body);
-        $("#image1").attr("src", post.image1);
-        $("#image2").attr("src", post.image2);
-        $("#image3").attr("src", post.image3);
-        $("#image1").attr("alt", post.image1_alt);
-        $("#image2").attr("alt", post.image2_alt);
-        $("#image3").attr("alt", post.image3_alt);
+        $("#image1").attr("src", `./images/${post.image1}.jpg`);
+        $("#image2").attr("src", `./images/${post.image2}.jpg`);
+        $("#image3").attr("src", `./images/${post.image3}.jpg`);
+        $("#image1").attr("alt", `./images/${post.image1_alt}.jpg`);
+        $("#image2").attr("alt", `./images/${post.image2_alt}.jpg`);
+        $("#image3").attr("alt", `./images/${post.image3_alt}.jpg`);
         $("#category").append(post.category);
         document.title = post.post_title;
 
