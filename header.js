@@ -60,62 +60,91 @@ function injectHeader() {
     <div id="preloader">
       <span class="loader"></span>
     </div>
-    <header id="header" class="site-header text-black">
+  <header id="header" class="site-header text-black">
       <nav id="header-nav" class="navbar navbar-expand-lg px-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/main-logo.png" class="logo" style="width: 100px;" />
-          </a>
-          <button
-            class="navbar-toggler d-flex d-lg-none order-3 p-2"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#bdNavbar"
-            aria-controls="bdNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <svg class="navbar-icon" width="50" height="50">
-              <use xlink:href="#navbar-icon"></use>
-            </svg>
-          </button>
+        <div class="container-fluid flex-wrap">
+          <!-- Logo (mobile top center) -->
+            <a class="navbar-brand order-2 order-lg-1" href="index.html">
+              <img
+                src="images/main-logo.png"
+                class="logo"
+                style="width: 6.25rem;"
+                alt="global trending"
+              />
+            </a>
+          <!-- Main nav links -->
           <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="bdNavbar"
-            aria-labelledby="bdNavbarOffcanvasLabel"
+            class="order-1 order-lg-3 d-flex justify-content-lg-start justify-content-center"
           >
-            <div class="offcanvas-header px-4 pb-0">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/main-logo.png" class="logo" style="width: 100px;" />
-              </a>
+          <div class="d-block mb-2 text-center">
+            <div class="dropdown">
               <button
+                class="navbar-toggler"
                 type="button"
-                class="btn-close btn-close-black"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                data-bs-target="#bdNavbar"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul
-                id="navbar"
-                class="navbar-nav text-capitalize justify-content-end align-items-center flex-grow-1 pe-3"
+                id="categoryDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <li class="nav-item">
-                  <a class="nav-link me-4 active" href="index.html">الرئيسية</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4 active" href="blog-classic.html">المدونة</a>
-                </li>
+                <img src="images/menu.svg" style="width:3.125rem" />
+              </button>
+              <ul
+                class="dropdown-menu w-100 text-center"
+                aria-labelledby="categoryDropdown"
+              >
+  <li><a class="dropdown-item" href="./blog category.html?id=مصر">مصر</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=الخليج">الخليج</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=رياضة">رياضة</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=منوع">منوع</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=سوريا">سوريا</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=تكنولوجي">تكنولوجي</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=فن">فن</a></li>
               </ul>
             </div>
+          </div>
+            <ul
+              class="navbar-nav d- flex-row w-100 text-capitalize align-items-center flex-wrap pe-md-3 pe-1"
+            >
+              <li class="nav-item">
+                <a class="nav-link me-md-4 me-2" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link me-md-4 me-2"
+                  href="./blog-classic.html"
+                  >المدونة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4 me-2" href="./sections.html"
+                  >الاقسام</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Categories section: dropdown on mobile, inline on desktop -->
+          <div class="order-3 order-lg-2">
+            <!-- Mobile Dropdown -->
+           
+
+            <!-- Desktop inline categories -->
+            <ul
+              class="list-unstyled mb-0 d-none d-lg-flex flex-wrap justify-content-lg-end text-hover"
+            >
+             <li><a class="dropdown-item" href="./blog category.html?id=مصر">مصر</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=الخليج">الخليج</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=رياضة">رياضة</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=منوع">منوع</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=سوريا">سوريا</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=تكنولوجي">تكنولوجي</a></li>
+  <li><a class="dropdown-item" href="./blog category.html?id=فن">فن</a></li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
   `;
-  document.body.insertAdjacentHTML('afterbegin', headerHTML);
+  document.body.insertAdjacentHTML("afterbegin", headerHTML);
 }
 
 // Call it when DOM is ready
