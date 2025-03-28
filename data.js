@@ -37,9 +37,9 @@ fetch(sheetCSVUrl)
         $("#post_header").append(post.header);
         $("#post_footer").append(post.footer);
         $("#body").append(post.body);
-        $("#image1").attr("src", `./images/${post.image1}`);
-        $("#image2").attr("src", `./images/${post.image2}`);
-        $("#image3").attr("src", `./images/${post.image3}`);
+        $("#image1").attr("src", `./images/${post.image1}.jpg`);
+        $("#image2").attr("src", `./images/${post.image2}.jpg`);
+        $("#image3").attr("src", `./images/${post.image3}.jpg`);
         $("#image1").attr("alt", post.image1_alt);
         $("#image2").attr("alt", post.image2_alt);
         $("#image3").attr("alt", post.image3_alt);
