@@ -25,22 +25,22 @@
   addHeadTag("meta", { name: "googlebot", content: "index, follow" });
 
   // Canonical Link
-  addHeadTag("link", { rel: "canonical", href: "https://www.example.com/" });
+  addHeadTag("link", { rel: "canonical", href: "https://global-trending.net/" });
 
   // Open Graph
   addHeadTag("meta", { property: "og:type", content: "website" });
   addHeadTag("meta", { property: "og:locale", content: "ar_AR" });
   addHeadTag("meta", { property: "og:title", content: "global trending - تريند العالم" });
   addHeadTag("meta", { property: "og:description", content: "منصة عربية متخصصة في عرض التريندات العالمية والأخبار الشائعة لحظة بلحظة." });
-  addHeadTag("meta", { property: "og:url", content: "https://www.example.com/" });
+  addHeadTag("meta", { property: "og:url", content: "https://global-trending.net/" });
   addHeadTag("meta", { property: "og:site_name", content: "global trending - تريند العالم" });
-  addHeadTag("meta", { property: "og:image", content: "https://www.example.com/images/og-image.jpg" });
+  addHeadTag("meta", { property: "og:image", content: "https://global-trending.net/images/og-image.jpg" });
 
   // Twitter Cards
   addHeadTag("meta", { name: "twitter:card", content: "summary_large_image" });
   addHeadTag("meta", { name: "twitter:title", content: "global trending - تريند العالم" });
   addHeadTag("meta", { name: "twitter:description", content: "تابع آخر التريندات العالمية والعربية من مصدر موثوق." });
-  addHeadTag("meta", { name: "twitter:image", content: "https://www.example.com/images/og-image.jpg" });
+  addHeadTag("meta", { name: "twitter:image", content: "https://global-trending.net/images/og-image.jpg" });
   addHeadTag("meta", { name: "twitter:site", content: "@your_twitter_handle" });
   addHeadTag("meta", { name: "twitter:creator", content: "@your_twitter_handle" });
 
