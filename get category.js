@@ -41,7 +41,7 @@ fetch(sheetCSVUrl)
             <div class="card-item">
               <div class="card border-0">
                 <div class="card-image">
-                  <img src="${post.image1}" alt="${post.image1_alt}" class="post-image img-fluid" style="height: 50vh; object-fit: cover;" />
+                  <img src="./images/${post.image1}.jpg" alt="${post.image1_alt}" class="post-image img-fluid" style="height: 50vh; object-fit: cover;" />
                 </div>
               </div>
               <div class="card-body p-0 mt-4">

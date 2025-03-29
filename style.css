@@ -22,13 +22,13 @@ CSS STRUCTURE:
 /*--------------------------------------------------------------
 /** 1. VARIABLES
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 :root {
   --accent-color: #0d0d0d;
   --bs-gray-100: #f3f3f3;
   --bs-gray-200: #e7e5e2;
   --bs-primary: #c70e0e;
-  --bs-secondary: #F6F5F2;
+  --bs-secondary: #f6f5f2;
   --bs-primary-rgb: 199, 14, 14;
   --bs-body-bg-rgb: 253, 254, 255;
   --bs-light: #fff;
@@ -50,8 +50,8 @@ CSS STRUCTURE:
 
 /* Fonts */
 :root {
-  --body-font: "Cairo","Sofia Sans", sans-serif;
-  --heading-font: "Cairo","Cormorant Upright", serif;
+  --body-font: "Cairo", "Sofia Sans", sans-serif;
+  --heading-font: "Cairo", "Cormorant Upright", serif;
 }
 
 /*----------------------------------------------*/
@@ -88,7 +88,16 @@ ul.inner-list li {
 strong {
   font-weight: bold;
 }
-
+h1{
+  margin-top: 20px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+}
 a {
   color: var(--bs-primary);
   text-decoration: none;
@@ -157,7 +166,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-
   .margin-small,
   .margin-medium,
   .margin-large {
@@ -276,7 +284,7 @@ h5 {
 
 .btn.btn-full {
   display: block;
-  margin: .85em 0;
+  margin: 0.85em 0;
   width: 100%;
   letter-spacing: 0.12em;
 }
@@ -429,20 +437,19 @@ h5 {
   color: var(--bs-dark);
 }
 
-.pseudo-text-effect>span {
+.pseudo-text-effect > span {
   display: inline-block;
   transform: translateY(0%);
   transition: inherit;
 }
 
-.pseudo-text-effect:hover>span {
+.pseudo-text-effect:hover > span {
   transform: translateY(-100%);
 }
 
 .pseudo-text-effect:hover::after {
   transform: translateY(0%);
 }
-
 
 /*--- Image hover Effects
 -----------------------------------------------*/
@@ -499,13 +506,13 @@ h5 {
   transition: inherit;
 }
 
-.link-effect a>span {
+.link-effect a > span {
   display: inline-block;
   transform: translateY(0%);
   transition: inherit;
 }
 
-.link-effect:hover a>span {
+.link-effect:hover a > span {
   transform: translateY(-100%);
 }
 
@@ -543,7 +550,7 @@ h5 {
 }
 
 .icon-box-effect .social-links button:nth-child(1) {
-  transition: 1.0s;
+  transition: 1s;
 }
 
 .icon-box-effect .social-links button:nth-child(2) {
@@ -562,7 +569,7 @@ h5 {
   transition: 2.4s;
 }
 
-.icon-box-effect:hover>.product-card .social-links button {
+.icon-box-effect:hover > .product-card .social-links button {
   bottom: 200px;
   opacity: 1;
 }
@@ -772,7 +779,7 @@ h5 {
 }
 
 .swiper-pagination .swiper-pagination-bullet::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -786,12 +793,14 @@ h5 {
   transition: transform 0.3s ease-out;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: 0 10px !important;
 }
 
-.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active:after,
+.swiper-pagination
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active:after,
 .swiper-pagination span.swiper-pagination-bullet:hover:after {
   transform: scale(2);
 }
@@ -841,7 +850,7 @@ h5 {
 
 /* 4. Featured Product
 /*----------------------------------------------*/
-.product-store .swiper-horizontal>.swiper-pagination-bullets,
+.product-store .swiper-horizontal > .swiper-pagination-bullets,
 .product-store .swiper-pagination-bullets.swiper-pagination-horizontal,
 .product-store .swiper-pagination-custom,
 .product-store .swiper-pagination-fraction {

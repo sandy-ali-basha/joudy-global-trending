@@ -16,23 +16,23 @@ fetch(sheetCSVUrl)
       .split("\n")
       .map((row) => row.split(","));
     const headers = lines[0];
-
     jsonData = lines.slice(1).map((row) => {
       let obj = {};
       headers.forEach((header, index) => {
-        obj[header.trim()] = row[index] ? row[index].trim() : "";
+        obj[header.trim()] = row[index] ? row[index].trim().replace(/^"(.*)"$/, "$1") : "";
       });
       return obj;
     });
-
+    
     const targetId = getIdFromUrl();
     if (targetId !== null) {
       post = jsonData.find((item) => item["id"] === targetId);
       console.log("Filtered row by ID:", post);
 
       // ✅ Now it's safe to use post.id or other post data here
+console.log(post.header)
 
-      if (post) {
+if (post) {
         $("#title").append(post.post_title);
         $("#post_header").append(post.header);
         $("#post_footer").append(post.footer);
