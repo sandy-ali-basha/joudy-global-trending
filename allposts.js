@@ -17,20 +17,25 @@ fetch(sheetCSVUrl)
       .map((row) => row.split(","));
     const headers = lines[0];
 
-    jsonData = lines.slice(1).map((row) => {
-      let obj = {};
-      headers.forEach((header, index) => {
-        obj[header.trim()] = row[index] ? row[index].trim() : "";
-      });
-      return obj;
-    });
+    jsonData = lines
+      .slice(1)
+      .map((row) => {
+        let obj = {};
+        headers.forEach((header, index) => {
+          obj[header.trim()] = row[index]
+            ? row[index].trim().replace(/^"(.*)"$/, "$1")
+            : "";
+        }); 
+        return obj;
+      })
+      .reverse(); // Reverse to show the last row first
 
     $(document).ready(function () {
-      jsonData.forEach((post) => {
-        console.log("post", post);
+      jsonData.slice(2, 8).forEach((post) => {
         // Limit body to 20 words
-const bodySnippet = post.body.split(" ").slice(0, 20).join(" ") + "...";
-
+        const bodySnippet =
+          post.header.split(" ").slice(0, 20).join(" ") + "...";
+        console.log("post_title", post.post_title);
         const postCard = `
           <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
             <div class="card-item">
@@ -49,9 +54,36 @@ const bodySnippet = post.body.split(" ").slice(0, 20).join(" ") + "...";
             </div>
           </div>
         `;
-        console.log("postCard", postCard);
 
         $("#post-grid").append(postCard);
       });
+
+      jsonData.slice(0, 2).forEach((post) => { // Show only the first 4 posts
+        // Limit body to 20 words
+        const bodySnippet =
+          post.header.split(" ").slice(0, 20).join(" ") + "...";
+
+        const postCard = `
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+            <div class="card-item">
+              <div class="card border-0">
+                <div class="card-image">
+                  <img src="./images/${post.image1}.jpg" alt="${post.image1_alt}" class="post-image img-fluid" style="height: 50vh; object-fit: cover;" />
+                </div>
+              </div>
+              <div class="card-body p-0 mt-4">
+                <h3 class="card-title text-capitalize">
+                  <a href="blog post.html?id=${post.id}">${post.post_title}</a>
+                </h3>
+                <p>${bodySnippet}</p>
+                <a href="blog post.html?id=${post.id}" class="btn btn-normal text-capitalize p-0"><em>عرض المزيد</em></a>
+              </div>
+            </div>
+          </div>
+        `;
+    
+        $("#latest-post-grid").append(postCard);
+      });
     });
+    
   });
