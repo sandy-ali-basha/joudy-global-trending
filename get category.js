@@ -25,7 +25,7 @@ fetch(sheetCSVUrl)
       return obj;
     });
     const targetId = getIdFromUrl();
-  
+
     const category = jsonData.filter(
       (item) => item.category && item.category.trim() === targetId
     );
@@ -34,8 +34,8 @@ fetch(sheetCSVUrl)
       category.forEach((post) => {
         console.log("post", post);
         // Limit body to 20 words
-        const bodySnippet = post.body.split(" ").slice(0, 20).join(" ") + "...";
-  
+        const bodySnippet =
+          post.header.split(" ").slice(0, 20).join(" ") + "...";
         const postCard = `
           <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
             <div class="card-item">
