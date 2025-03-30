@@ -31,7 +31,7 @@ fetch(sheetCSVUrl)
       .reverse(); // Reverse to show the last row first
 
     $(document).ready(function () {
-      jsonData.slice(2, 8).forEach((post) => {
+      jsonData.forEach((post) => {
         // Limit body to 20 words
         const bodySnippet =
           post.header.split(" ").slice(0, 20).join(" ") + "...";
