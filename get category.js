@@ -17,13 +17,18 @@ fetch(sheetCSVUrl)
       .map((row) => row.split(","));
     const headers = lines[0];
 
-    jsonData = lines.slice(1).map((row) => {
-      let obj = {};
-      headers.forEach((header, index) => {
-        obj[header.trim()] = row[index] ? row[index].trim() : "";
-      });
-      return obj;
-    });
+    jsonData = lines
+      .slice(1)
+      .map((row) => {
+        let obj = {};
+        headers.forEach((header, index) => {
+          obj[header.trim()] = row[index]
+            ? row[index].trim().replace(/^"(.*)"$/, "$1")
+            : "";
+        });
+        return obj;
+      })
+      .reverse();
     const targetId = getIdFromUrl();
 
     const category = jsonData.filter(
