@@ -12,14 +12,24 @@ function injectFooter() {
               </div>
             </div>
             <div class="col-lg-2 col-sm-6 pb-3">
-              <div class="footer-menu text-capitalize">
-                <h5 class="widget-title pb-2">روابط سريعة</h5>
+                 <div class="footer-menu text-capitalize">
+                 <h5 class="widget-title pb-2">روابط سريعة</h5>
+
                 <ul class="menu-list list-unstyled text-capitalize">
                   <li class="menu-item pb-2">
                     <a href="#billboard">الرئيسية</a>
                   </li>
                   <li class="menu-item pb-2">
-                    <a href="#latest-blog">المدونة</a>
+                    <a href="./about-us.html">عنا</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="./privacypolicy.html">سياسة الخصوصية</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                     <a href="#latest-blog">المدونة</a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="./contact.html">تواصل معنا</a>
                   </li>
                 </ul>
               </div>

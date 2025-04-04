@@ -19,7 +19,7 @@ fetch(sheetCSVUrl)
     jsonData = lines.slice(1).map((row) => {
       let obj = {};
       headers.forEach((header, index) => {
-        obj[header.trim()] = row[index] ? row[index].trim().replace(/^"(.*)"$/, "$1") : "";
+        obj[header.trim()] = row[index] ? row[index].trim().replace(/^["'](.*)["']$/, "$1") : "";
       });
       return obj;
     });

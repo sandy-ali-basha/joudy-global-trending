@@ -90,46 +90,78 @@
   <script src="header.js"></script>
 </head>
 
-<body dir="rtl" class="bg-body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0rem 0rem -40%"
+<body class="bg-body" dir="rtl" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
   data-bs-smooth-scroll="true" tabindex="0">
-
   <section class="hero-section d-flex align-items-center margin-large">
     <div class="container-fluid">
       <div class="row">
-        <div class="hero-content col align-items-center">
-          <h1 class="display-1">المدونة</h1>
+        <div class="hero-content align-items-center">
+          <h1 class="display-1">اتصل بنا</h1>
           <div class="breadcrumbs">
             <span class="item">
               <a href="index.html">الرئيسية /</a>
             </span>
-            <span class="item">
-              <a href="./blog-classic.html">المدونة /</a>
-            </span>
-            <span class="item">قسم</span>
+            <span class="item">اتصل بنا</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="post-wrap my-5 py-5">
-    <div class="container-fluid">
+  <section class="contact-us-wrap py-5">
+    <div class="container">
       <div class="row">
-        <main class="post-list post-card-small">
-          <div class="row" id="post-grid">
-
+        <div class="contact-info col-md-6 mb-5">
+          <h2 class="fs-3 text-capitalize mb-3">معلومات التواصل</h2>
+          <p class="mb-5">تريند العالم: موقع متخصص بنشر أهم المواضيع الرائجة في الشرق الأوسط.</p>
+          <div class="page-content">
+            <div class="col-md-6">
+              <div class="content-box">
+                <h5 class="element-title text-capitalize">العنوان</h5>
+                <div class="contact-address">
+                  <p>مصر - القاهرة</p>
+                </div>
+                <h5 class="element-title text-capitalize">البريد الالكتروني</h5>
+                <div class="email-address">
+                  <p>
+                    <a href="#">alibashajoudy@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </main>
+        </div>
+        <div class="inquiry-item col-md-6">
+          <h2 class="fs-3 text-capitalize mb-3">هل لديك أيه اسئلة</h2>
+          <p class="mb-5">استخدم النموذج أدناه للتواصل معنا.</p>
+          <form id="form" class="form-group flex-wrap">
+            <div class="form-input col-lg-12 mb-3">
+              <input type="text" name="email" placeholder="Write Your Name Here" class="form-control ps-3 me-3 mb-3">
+              <input type="text" name="email" placeholder="Write Your Email Here" class="form-control ps-3">
+            </div>
+            <div class="col-lg-12 mb-3">
+              <input type="text" name="email" placeholder="Phone Number" class="form-control ps-3">
+            </div>
+            <div class="col-lg-12 mb-3">
+              <input type="text" name="email" placeholder="Write Your Subject Here" class="form-control ps-3">
+            </div>
+            <div class="col-lg-12 mb-3">
+              <textarea placeholder="Write Your Message Here" class="form-control ps-3" rows="8"></textarea>
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg text-capitalize btn-rounded-none">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <script src="js/jquery-1.11.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="./get category.js"></script>
 </body>
 
 </html>
